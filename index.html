@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Podzespoły komputera</title>
+  <style>
+    body {
+      background: #111;
+      color: #e0e0e0;
+      font-family: Georgia, serif;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      line-height: 1.85;
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+    h2 {
+      font-size: 20px;
+      color: #ccc;
+      margin-top: 36px;
+    }
+    p { margin: 14px 0; }
+    .ip-highlight {
+      background: #ff3b3b;
+      color: #fff;
+      font-weight: bold;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Podzespoły komputera — kompletny przewodnik</h1>
+
+<div id="content">
+  <!-- tekst zostanie wygenerowany przez JS, IP wstawione w losowe miejsce -->
+</div>
+
+<script>
+const akapity = [
+  `<h2>Procesor (CPU)</h2>`,
+  `<p>Procesor, czyli jednostka centralna, to mózg każdego komputera. Odpowiada za wykonywanie wszystkich instrukcji programów, od prostych obliczeń arytmetycznych po skomplikowane operacje graficzne. Współczesne procesory posiadają wiele rdzeni, co pozwala na równoległe przetwarzanie wielu zadań jednocześnie. Każdy rdzeń może samodzielnie wykonywać instrukcje, co znacząco przyspiesza działanie aplikacji wielowątkowych.</p>`,
+  `<p>Taktowanie procesora mierzone jest w gigahercach (GHz) i określa, ile cykli na sekundę może wykonać procesor. Wyższe taktowanie oznacza szybsze przetwarzanie danych, jednak równie ważna jest architektura samego procesora oraz wielkość pamięci podręcznej. Pamięć cache pozwala na przechowywanie najczęściej używanych danych w bezpośredniej bliskości rdzeni, eliminując konieczność sięgania do wolniejszej pamięci RAM.</p>`,
+  `<p>Producenci tacy jak Intel oraz AMD od lat rywalizują ze sobą w wyścigu o jak najwydajniejszy procesor. Intel przez długi czas dominował na rynku, jednak AMD ze swoją architekturą Ryzen zdołało zniwelować dystans i w wielu zastosowaniach oferuje lepszą wydajność przy niższych cenach. Dla graczy i twórców treści wybór odpowiedniego procesora ma ogromne znaczenie dla płynności pracy.</p>`,
+
+  `<h2>Pamięć RAM</h2>`,
+  `<p>Pamięć RAM (Random Access Memory) to tymczasowa pamięć operacyjna komputera. Przechowuje dane i programy, z których aktualnie korzysta procesor. Im więcej pamięci RAM, tym więcej programów może działać jednocześnie bez spowalniania systemu. Współcześnie standardem staje się 16 GB pamięci, choć entuzjaści i profesjonaliści często montują 32 GB lub więcej.</p>`,
+  `<p>Pamięć RAM charakteryzuje się bardzo krótkim czasem dostępu, liczonym w nanosekundach. Dane przechowywane w RAM znikają po wyłączeniu komputera, dlatego nazywamy ją pamięcią ulotną. Różni się to zasadniczo od pamięci masowej, takiej jak dyski SSD czy HDD, które zachowują dane nawet bez zasilania. Standard DDR5 wprowadził znaczące usprawnienia w stosunku do poprzednika — oferuje wyższe częstotliwości i niższe napięcie zasilania.</p>`,
+  `<p>Producenci tacy jak Corsair, Kingston czy G.Skill oferują moduły pamięci RAM w różnych konfiguracjach. Graczom polecane są zestawy z podświetleniem RGB, jednak warto pamiętać, że na wydajność wpływa głównie taktowanie i opóźnienia (timingsy), a nie wygląd. Dwukanałowy tryb pracy, polegający na zainstalowaniu modułów w odpowiednich gniazdach płyty głównej, potrafi zwiększyć przepustowość pamięci nawet o 30–40%.</p>`,
+
+  `<h2>Karta graficzna (GPU)</h2>`,
+  `<p>Karta graficzna, czyli procesor graficzny (GPU), odpowiada za renderowanie obrazu wyświetlanego na monitorze. W grach komputerowych to właśnie GPU najczęściej decyduje o płynności rozgrywki. Nowoczesne karty graficzne posiadają tysiące małych rdzeni obliczeniowych, które świetnie nadają się do równoległego przetwarzania grafiki oraz obliczeń naukowych.</p>`,
+  `<p>Nvidia i AMD to dwaj główni gracze na rynku kart graficznych dla konsumentów. Nvidia ze swoją serią GeForce RTX słynie z technologii ray tracingu i DLSS, która wykorzystuje sztuczną inteligencję do skalowania rozdzielczości w czasie rzeczywistym. AMD odpowiada technologią FSR, która jest bardziej otwarta i dostępna dla szerszej gamy sprzętu. Dla profesjonalistów obie firmy oferują osobne linie kart — Quadro (Nvidia) i Radeon Pro (AMD).</p>`,
+  `<p>Pamięć VRAM zainstalowana na karcie graficznej przechowuje tekstury i dane niezbędne do renderowania obrazu. Przy rozdzielczościach 4K i grach z wysokiej jakości teksturami zaleca się co najmniej 8–10 GB VRAM. Karty graficzne generują dużo ciepła, dlatego wymagają skutecznego chłodzenia — zarówno własnego układu chłodzącego, jak i dobrej wentylacji w obudowie komputera.</p>`,
+
+  `<h2>Dysk twardy i SSD</h2>`,
+  `<p>Pamięć masowa to miejsce, gdzie przechowywane są system operacyjny, programy i pliki użytkownika. Tradycyjne dyski twarde (HDD) używają wirujących talerzy magnetycznych i głowicy odczytu/zapisu, natomiast dyski SSD (Solid State Drive) korzystają z pamięci flash, podobnej do tej stosowanej w pendrive'ach. Różnica w szybkości jest kolosalna — SSD może być nawet 10 razy szybszy od HDD.</p>`,
+  `<p>Nowoczesne dyski NVMe, montowane bezpośrednio w gnieździe M.2 na płycie głównej, oferują transfery rzędu 5000–7000 MB/s, co czyni je niemal 100-krotnie szybszymi od tradycyjnych dysków HDD. Dla systemu operacyjnego i gier SSD lub NVMe to dziś absolutna konieczność — znacząco skracają czas uruchamiania systemu i ładowania poziomów w grach. HDD wciąż ma sens jako tańszy nośnik do archiwizacji dużych ilości danych.</p>`,
+  `<p>Producenci tacy jak Samsung, WD i Seagate oferują szeroki wybór dysków dla różnych potrzeb. Dyski Samsung 870 EVO i 980 Pro cieszą się renomą za niezawodność i wydajność. Przy zakupie dysku SSD warto zwrócić uwagę na żywotność wyrażoną w TBW (Terabytes Written), która informuje, ile danych można na nim zapisać przez cały okres eksploatacji. Dla przeciętnego użytkownika nawet budżetowy SSD sprawdzi się przez wiele lat.</p>`,
+
+  `<h2>Płyta główna</h2>`,
+  `<p>Płyta główna to szkielet każdego komputera — łączy ze sobą wszystkie podzespoły i zapewnia komunikację między nimi. Wybór płyty głównej determinuje, jakiego procesora i jakiej pamięci RAM można użyć, ile kart rozszerzeń i dysków można zamontować oraz jakie porty są dostępne z tyłu obudowy. Dobra płyta główna powinna być dobrana zarówno pod kątem aktualnych potrzeb, jak i możliwości rozbudowy w przyszłości.</p>`,
+  `<p>Chipsety płyt głównych determinują ich możliwości. Dla platformy Intel dostępne są chipsety z serii B, H i Z, gdzie Z oferuje pełne wsparcie dla przetaktowywania procesora. AMD stosuje platformę AM5 z chipsetami B650 oraz X670, które obsługują procesory z serii Ryzen 7000. Gniazda rozszerzeń PCIe 4.0 i 5.0 zapewniają szybką komunikację z kartą graficzną i dyskami NVMe.</p>`,
+  `<p>Producenci płyt głównych tacy jak ASUS, MSI, Gigabyte i ASRock oferują modele w różnych przedziałach cenowych. Tańsze modele w standardzie Micro-ATX sprawdzą się w budżetowych zestawach, natomiast flagowe płyty ATX z rozbudowanym układem zasilania VRM są przeznaczone dla entuzjastów i osób zamierzających przetaktowywać procesor. Warto też zwrócić uwagę na liczbę złączy USB, gniazd M.2 oraz jakość zintegrowanego audio.</p>`,
+
+  `<h2>Zasilacz (PSU)</h2>`,
+  `<p>Zasilacz to często niedoceniany, a niezwykle ważny element zestawu komputerowego. Jego zadaniem jest przekształcenie prądu zmiennego z gniazdka elektrycznego na prąd stały o odpowiednich napięciach zasilający poszczególne komponenty. Słabej jakości zasilacz może być przyczyną niestabilności systemu, uszkodzenia komponentów, a nawet pożaru. Inwestycja w dobrej jakości zasilacz to inwestycja w bezpieczeństwo i długowieczność całego sprzętu.</p>`,
+  `<p>Sprawność zasilacza mierzona jest certyfikatem 80 Plus — im wyższy poziom (Bronze, Silver, Gold, Platinum, Titanium), tym mniej energii elektrycznej jest marnowane w postaci ciepła. Przy doborze zasilacza należy zsumować pobór mocy wszystkich komponentów i dodać 20–30% zapasu. Modularne zasilacze pozwalają na podłączenie tylko niezbędnych kabli, co ułatwia zarządzanie kablami i poprawia przepływ powietrza wewnątrz obudowy.</p>`,
+
+  `<h2>Chłodzenie</h2>`,
+  `<p>Efektywne chłodzenie jest kluczowe dla stabilnej pracy komputera. Procesory generują znaczne ilości ciepła podczas pracy, dlatego wymagają skutecznego odprowadzania go na zewnątrz obudowy. Boxowe chłodzenia dołączane do procesorów sprawdzają się przy standardowym użytkowaniu, jednak gracze i osoby przetaktowujące komponenty powinni zainwestować w wydajniejszy cooler. Wybór między chłodzeniem powietrznym a cieczowym zależy od budżetu, preferencji estetycznych i wymagań termicznych.</p>`,
+  `<p>Chłodzenia wodne, zarówno zestawy AIO (All-In-One), jak i niestandardowe loopy, oferują doskonałą wydajność termiczną i często są cichsze od dużych coolerów wieżowych. Jednak wymagają starannego montażu i konserwacji. Pasta termoprzewodząca naniesiona między procesorem a podstawą chłodzenia ma ogromny wpływ na temperatury — warto stosować produkty renomowanych producentów, takich jak Noctua NT-H1 czy Arctic MX-6.</p>`,
+
+  `<h2>Obudowa</h2>`,
+  `<p>Obudowa to nie tylko estetyczna skorupka — to element wpływający na przepływ powietrza, łatwość montażu i chłodzenie wszystkich podzespołów. Dobra obudowa powinna zapewniać odpowiednią cyrkulację powietrza, mieć miejsce na zarządzanie kablami i obsługiwać wybrany format płyty głównej. Obudowy tower zapewniają najwięcej miejsca i możliwości rozbudowy, natomiast kompaktowe obudowy SFF (Small Form Factor) są idealne dla tych, którzy cenią sobie oszczędność miejsca.</p>`,
+  `<p>Wentylatory w obudowie powinny być zbalansowane — nadmuch z przodu i dołu, wyciąg z tyłu i góry. Pozwala to na utrzymanie niskich temperatur wewnątrz obudowy nawet podczas intensywnych obciążeń. Szklane panele boczne stały się popularnym wyborem wśród entuzjastów pragnących pochwalić się podświetlonymi komponentami. Warto jednak pamiętać, że szkło nie odprowadza ciepła tak dobrze jak metal, co w niektórych konfiguracjach może prowadzić do wyższych temperatur.</p>`,
+];
+
+// Losowe miejsce na wstawienie IP (między 4 a n-4 akapit)
+const insertIndex = Math.floor(Math.random() * (akapity.length - 8)) + 4;
+
+// Pobierz IP
+fetch("https://api.ipify.org?format=json")
+  .then(r => r.json())
+  .then(data => {
+    const ip = data.ip;
+    const ipTag = `<p>Każdy komputer podłączony do internetu posiada unikalny adres IP, który identyfikuje go w sieci. Twój aktualny adres IP to: <span class="ip-highlight">${ip}</span>. Jest on widoczny dla każdego serwera, z którym się łączysz — dlatego warto dbać o prywatność w sieci.</p>`;
+    akapity.splice(insertIndex, 0, ipTag);
+    document.getElementById("content").innerHTML = akapity.join("");
+  })
+  .catch(() => {
+    // jeśli IP nie działa, wstaw placeholder
+    const ipTag = `<p>Każdy komputer podłączony do internetu posiada unikalny adres IP. Nie udało się pobrać Twojego adresu — sprawdź połączenie z internetem.</p>`;
+    akapity.splice(insertIndex, 0, ipTag);
+    document.getElementById("content").innerHTML = akapity.join("");
+  });
+</script>
+
+</body>
+</html>
